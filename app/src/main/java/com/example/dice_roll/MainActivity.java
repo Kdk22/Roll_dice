@@ -205,9 +205,9 @@ public class MainActivity extends AppCompatActivity {
         int number;
         Random rand = new Random();
 
-
-            number = rand.nextInt(sides);
-
+do {
+    number = rand.nextInt(sides+1);
+} while (number == 0);
         return Integer.toString(number);
     }
 
